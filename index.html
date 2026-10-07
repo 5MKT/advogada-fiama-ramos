@@ -238,7 +238,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .hero{padding-block:clamp(36px,5vw,64px) clamp(64px,8vw,104px)}
 .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,6vw,84px);align-items:start}
 .hero-txt{display:flex;flex-direction:column;gap:22px;min-width:0;padding-top:clamp(0px,2vw,24px)}
-.hero .headline{margin:0;font-family:var(--display);font-size:clamp(40px,5vw,66px);line-height:1.03;letter-spacing:-.012em}
+.hero .headline{margin:0;font-family:var(--display);font-size:clamp(38px,4.3vw,60px);line-height:1.03;letter-spacing:-.012em}
 .hero .headline em{font-style:italic;color:var(--marrom)}
 .hero .sub{font-size:19px;font-weight:400;line-height:1.55;max-width:46ch}
 .hero .comp{color:var(--texto-suave);max-width:54ch}
@@ -424,6 +424,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .publico.tres{grid-template-columns:repeat(3,1fr)}
 @media (max-width:980px){.publico.tres{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.publico.tres{grid-template-columns:1fr}}
+.hero .headline .nw{white-space:nowrap}
+@media (max-width:520px){.hero .headline .nw{white-space:normal}}
+.contato .wrap > *{min-width:0}
+.contato .btn{gap:14px}
+.contato .btn span{min-width:0;overflow-wrap:anywhere;text-align:left}
 </style>
 </head>
 <body>
@@ -451,12 +456,12 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
     <div class="wrap">
       <div class="hero-txt">
         <h1 class="kw" id="titulo">Fiama Ramos · Advogada de Direito Médico e da Saúde em Cacoal-RO · OAB/RO 11.756</h1>
-        <p class="headline">Segurança jurídica para quem <em>cuida</em> de pessoas, empresas e carreiras.</p>
-        <p class="sub">Atuação estratégica em Direito Médico e da Saúde, Direito do Servidor Público, defesa profissional e prevenção jurídica.</p>
-        <p class="comp">Orientação jurídica personalizada para médicos, profissionais da saúde, servidores públicos e pessoas que precisam proteger seus direitos com segurança, estratégia e responsabilidade.</p>
+        <p class="headline"><span class="nw">Você cuida de vidas.</span><br>Eu cuido da sua <em>carreira</em>.</p>
+        <p class="sub">Advocacia em Direito Médico para quem não pode parar: prevenção jurídica, defesa no CRM e em PAD e restituição de INSS para médicos de Rondônia e de todo o Brasil.</p>
+        <p class="comp">Atendimento presencial em Cacoal-RO e online, com análise individual de cada caso.</p>
         <div class="acoes">
           <a class="btn btn-escuro" data-wa="1" href="#contato"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg>Falar com a Dra. Fiama</a>
-          <a class="btn btn-linha" href="#areas">Conhecer áreas de atuação</a>
+          <a class="btn btn-linha" href="#medicos">Sou médico(a)</a>
         </div>
       </div>
       <figure class="hero-foto">
